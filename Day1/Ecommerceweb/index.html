@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script src="htt"></script>
+        <script src="./scripts/controllers/authcontroller.js"></script>
+        <script src="./scripts/app.js"></script>
+    </head>
+
+    <body>
+        <!---Template-->
+        <h1>TFL Store</h1>
+        <ol>
+            <li>Gerbera</li>
+            <li>Rose</li>
+            <li>Lotus</li>
+        </ol>
+        <div>
+            <form>
+                <table>
+                  <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email"/> </td>
+                  </tr>
+                      <tr>
+                         <td><label for="password">Password</label></td>
+                         <td><input type="password" name="password" id="password" /></td>
+                  </tr>
+                  <tr>
+                    <td> 
+                  <button onclick="authenticate()" type="button">Login</button> 
+
+                 </td>
+             </tr>
+                </table>
+            </form>
+        </div>
+        <script src=".">
+            function()
+       {
+                let emailAddress = document.getElementById("email").value;
+                let password = document.getElementById("password").value;
+                if  (emailAddress == "amit.bagade@gmail.com" && password == "amit@8262")
+            
+            {
+                console.log ("Welcome");
+            }
+            else 
+            {
+                console.log ("Invalid");
+            }
+
+        }
+        <script/>
+             
+
+    </body>
+
+</html>

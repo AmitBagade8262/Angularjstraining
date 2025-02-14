@@ -1,0 +1,56 @@
+<html>  
+<head>
+    <title>TFL Score</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>   
+    <script src="app.js"></script>
+    <!-- Angularjs CDN -->
+</head>
+<body ng-app="transflower" ng-controller="LoginController">
+
+
+    <h1>TFL STORE</h1>
+    <ol>
+        <li>Gerbera</li>
+        <li>Rose</li>
+        <li>Lotus</li>
+    </ol>
+
+
+
+
+    <form ng-sumit="onValidate()">
+        <table>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email"id="email" ng-model="user.email" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="password"id="password"  ng-model="user.password"  required />
+                </td>
+            </tr>
+
+
+            <td>
+                <button id="btnlogin">Login</button>
+            </td>
+
+
+        </table>
+    </form>
+
+
+
+
+
+</body>
+
+
+</html>

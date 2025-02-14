@@ -1,0 +1,14 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "\"Ecommerce webapp\"",
+  "main": "angular.min.js",
+  "scripts": {"build": "tsc"},
+  "author": "\"Amit Bagade\"",
+  "license": "ISC",
+  "dependencies": {
+    "@types/angular": "^1.8.9",
+    "angular": "^1.8.3",
+    "typescript": "^5.7.3"
+  }
+}

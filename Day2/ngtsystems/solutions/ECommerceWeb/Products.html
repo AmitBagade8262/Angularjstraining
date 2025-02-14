@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>TFL Store</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> <!-- AngularJS CDN -->
+    </head>
+    <body ng-app="tflStoreApp" ng-controller="ProductController">
+        <h1>Products</h1>
+
+        <script>
+            // AngularJS Application Module and Controller
+            var app = angular.module('tflStoreApp', []);
+            
+            app.controller('LoginController', function($scope) {
+                $scope.user = {
+                    email: '',
+                    password: ''
+                };
+                $scope.users=[
+                {email: 'ravi.tambade@transflower.in', password: '123'},
+                {email: 'ajinkya.Kulkarni@transflower.in', password: '123'},
+                {email: 'manisha.pant@transflower.in', password: '123'},
+                {email: 'rajeev.gandhi@transflower.in', password: '123'}
+                ];
+                </script>

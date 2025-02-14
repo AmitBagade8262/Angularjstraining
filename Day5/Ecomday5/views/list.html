@@ -1,0 +1,19 @@
+
+
+      <div ng-controller="productcontroller as vm" style="display: flex; flex-wrap: wrap;justify-content: space-evenly;">
+          <h1>Products</h1>
+          <div>
+              <div ng-repeat="products in vm.product" style="border: 1px solid #cacaca; padding: 1rem; display: flex; margin: 1rem;">
+                  <div>
+                      <img src={{products.image}} alt="">
+                  </div>
+                  <div>
+                      <h2>{{ products.name }}</h2>
+                      <h4>{{ products.brand }}</h4>
+                      <p>{{ products.specifications }}</p>
+                      <p>{{ products.price | currency : "₹" : 2 }}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  

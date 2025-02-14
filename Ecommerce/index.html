@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>AngularJS + TypeScript</title>
+    <script src="./angular.min.js"></script>
+    <script src="./dist/Catalogue/Services/product.service.js"></script>
+    <script src="./dist/Catalogue/Services/api.services.js"></script>
+    <script src="./dist/Catalogue/Controllers/product.controller.js"></script>
+    <script src="./dist/Catalogue/Controllers/apiproduct.controller.js"></script>
+    <script src="./dist/app.module.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="MyController as vm">
+        {{ vm.message }}
+
+        <hr/>
+        <h3>All Products</h3>
+        <div ng-repeat="product in vm.Products">
+          <p>{{ product.name }}</p> <!-- Assuming each user has a "name" property -->
+        </div>
+    </div>
+    
+  
+
+      <div ng-controller="productController as ctrl">
+        <h2>Products</h2>
+        <ul>
+          <li ng-repeat="product in ctrl.Products">{{ product.name }}</li>
+        </ul>
+      </div>
+
+      <div ng-controller="apiproductcontroller">
+        <h2>Products</h2>
+        <ul>
+          <li ng-repeat="product in Products">
+            <strong>{{ product.name }}</strong> - {{ product.brand }}
+           
+          </li>
+        </ul>
+        
+        
+    </body>
+</html>
