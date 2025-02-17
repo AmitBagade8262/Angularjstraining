@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    
+</head>
+<body>
+
+    <body ng-controller="ProductController as data">
+        <div class="cont" ng-repeat="product in data.catalogs">
+            <div class="product-card">
+                <div class="product-card__image">
+                    <img src="{{product.image}}">
+                </div>
+                <div class="product-card__info">
+                    <h2 class="product-card__title">{{product.name}}</h2>
+                    <p >{{product.category}}</p>
+                    <p >Brand:{{ product.brand }}</p>
+                    <p class="product-card__description">{{ product.specifications }}</p>
+                    <div class="product-card__price-row">
+                        <span class="product-card__price">&#x20b9;{{product.price}}</span>
+                        <button class="product-card__btn" ng-click="data.viewProductDetails(product.id)">View Product</button>
+                        <button class="product-card__btn" ng-click="data.addToCart(product)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+
+</body>
+</html>
+
+
